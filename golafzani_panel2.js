@@ -1,6 +1,6 @@
 // @ts-nocheck
 // Overclocked-Boost Core by U3jit - ProjectOptimize By Claxpoint - Project by BPB
-// SampleSource and idea for BPB // پنل گل افزانی 🇮🇷 
+// SampleSource and idea for BPB // پنل رزازیان .076
 // U3jit - High.Multi.Protocol 
 //Also thanks to bia-pain-bache
 //Frist BPB Persian panel! - UltraOverclocked-and-Boosted! onPROXY AND IPS,IpVX- 
@@ -8,13 +8,13 @@
 //U3jit: A way for Free ,A way to Be Free
 
 //Remember to change the golafzani_panel2.js name to worker.js on coudflare worker editor
-//Documents: https://github.com/claxpoint/golafzani-panel2/blob/main/README.md
+//Documents: https://github.com/MRazazian/golafzani-panel2/blob/main/README.md
 
 import { connect } from 'cloudflare:sockets';
 
 // یویوآیدی را تنظیم کنید
 // بهترین سایت برای برداشتن یویوآیدی اختصاصی: https://fusionauth.io/dev-tools/uuid-generator
-let userID = 'UUID_SHOMA';
+let userID = '7d8bc5f9-b32f-4a48-a01b-5cefde076ce2';
 //در صورت ارور یویوآیدی یبار یویوآیدی را پاک کرده و دوباره وارد کنید و دپلوی و سیو را بزنید
 
 //بهترین بات تلگرام آی پی تمیز = @cfcleanipbot
@@ -911,7 +911,7 @@ const getNormalConfigs = async (env, hostName, client) => {
   
 
     Addresses.forEach((addr) => {
-        let remark = `📡 Golafzani - ${addr}`;
+        let remark = `📡 AsalVip - ${addr}`;
         remark = remark.length <= 30 ? remark : `${remark.slice(0,29)}...`;
 
         vlessWsTls += 'vless' + `://${userID}@${addr}:443?encryption=none&security=tls&type=ws&host=${
@@ -1206,7 +1206,7 @@ const getFragmentConfigs = async (env, hostName, client) => {
         let addr = Addresses[index];
         let fragConfig = structuredClone(xrayConfigTemp);
         let outbound = structuredClone(xrayOutboundTemp);
-        let remark = `📡 GolafzaniFragment - ${addr}`;
+        let remark = `📡 AsalVipFragment - ${addr}`;
         delete outbound.mux;
         delete outbound.streamSettings.grpcSettings;
         delete outbound.streamSettings.realitySettings;
@@ -1258,7 +1258,7 @@ const getFragmentConfigs = async (env, hostName, client) => {
 
 
     let bestPing = structuredClone(xrayConfigTemp);
-    bestPing.remarks = '📡 Golafzani Fragment//BestPing';
+    bestPing.remarks = '📡 AsalVip Fragment//BestPing';
     bestPing.dns = await buildDNSObject(remoteDNS, localDNS, blockAds, bypassIran, blockPorn);
     bestPing.outbounds[0].settings.fragment.length = `${lengthMin}-${lengthMax}`;
     bestPing.outbounds[0].settings.fragment.interval = `${intervalMin}-${intervalMax}`;
